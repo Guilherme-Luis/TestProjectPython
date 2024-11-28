@@ -1,0 +1,31 @@
+Uma loja virtual precisa de uma funcionalidade onde os clientes possam filtrar os produtos por categoria, preço e avaliação dos usuários. Você recebeu a seguinte tarefa:
+●	Criar um endpoint /products/filter na API que aceite os seguintes parâmetros:
+●	category (opcional): nome da categoria.
+●	min_price e max_price (opcionais): para definir um intervalo de preços.
+●	rating (opcional): para retornar produtos com avaliação maior ou igual ao valor especificado.
+
+
+
+
+1 - Criaria um Endpoint utilizando o método GET, pois a solicitação é busca de dados e não alteração,
+fazendo assim ser o melhor método
+2 - Definiria os seguintes parâmetros e validações:
+category (opcional): string
+min_price (opcional): float
+max_price (opcional): float
+    - OBS: Condicional se houver os dois campos anteriores, min_price <= max_price
+rating (opcional): num(limite 0~5 ou 0~10)
+
+3 - Criaria a consulta em um banco, no meu caso tentaria MySQL:
+
+SELECT * FROM products
+WHERE (:category IS NULL OR category = :category)
+AND (:min_price IS NULL OR price >= :min_price)
+AND (:max_price IS NULL OR price <= :max_price)
+AND (:rating IS NULL OR rating >= :rating)
+
+4 - Criaria um retorno dos produtos, no qual deve-se filtrar os produtos baseados na consulta e
+possívelmente uma mensagem de erro, caso os parâmetros forem invalidados.
+
+
+
