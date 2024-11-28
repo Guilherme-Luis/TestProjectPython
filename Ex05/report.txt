@@ -1,0 +1,7 @@
+●	Erro de acesso na página de login do usuário na plataforma XXX
+●	Data: 12:10 Horário em Brasília | quinta-feira | 28 de novembro de 2024
+●	Informações: Google Chrome | IP: 192.168.10.67 | Usuário: Alex Ferreira | Departamento: Advocacia.
+●	Resultado Esperado: O sistema deve redirecionar o usuário para a interface principal.
+●	Resultado Atual: Após clicar em "Entrar", o sistema apresenta a mensagem de erro: "Erro interno do servidor" e não redireciona para a interface principal.
+●	Descrição do Problema: O usuário Alex Ferreira tentou acessar a plataforma no horário de almoço, mas se deparou com o erro "Erro interno do servidor".
+    O problema persistiu após várias tentativas, mesmo com as credenciais corretas. A falha ocorre constantemente, impedindo o acesso ao sistema.
