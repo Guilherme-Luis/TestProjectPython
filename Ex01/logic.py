@@ -11,9 +11,9 @@ while True:
         try:
             NumIntArray = list(map(int, NumIntUser.split()))
             #Separador textual para que haja coesão
-            print("-" * 40)
+            print(f"-" * 40)
             #exibição do array inteiro
-            print("Array com números inseridos: ", NumIntArray)
+            print(f"Array com números inseridos: {NumIntArray}")
             #condicional para o cálculo do pares e Ímpares
             for X in NumIntArray:
                 if X % 2 == 0:
@@ -26,7 +26,7 @@ while True:
             break
         except ValueError:
             #Caso haja números fracionados
-            print("Por favor, somente números inteiros para o exercício")
+            print(f"Por favor, somente números inteiros para o exercício")
     else:
         #Condição resultante para que a soma dos números dê certo
-        print("Por favor, Insira mais de um número")
+        print(f"Por favor, Insira mais de um número")
